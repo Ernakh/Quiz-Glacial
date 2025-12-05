@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Jogo.unity
+    guid: defd38c5159d14c4cb5c20c718d1ea1d
+  - enabled: 1
+    path: "Assets/Quest\xF5es/GravarQuest\xE3o.unity"
+    guid: f8875473339cac1419159134136dc314
+  - enabled: 1
+    path: "Assets/Quest\xF5es/Quest\xF5es.unity"
+    guid: 9d4a87bfe7134d549be4faf241fb7eff
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Dypsloom/DypThePenguin/Demo/Demo.unity
+    guid: 92faf7aeda83b564a9a5650a0fed51c4
+  m_configObjects: {}
