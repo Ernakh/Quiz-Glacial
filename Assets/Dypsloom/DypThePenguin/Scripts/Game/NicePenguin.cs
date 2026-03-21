@@ -28,6 +28,7 @@ namespace Dypsloom.DypThePenguin.Scripts.Game
         public AudioClip audioEnd;
 
         public GameObject fimJogo;
+        public GameObject fimJogoMensagem;
 
         protected int m_BrokenChainCount;
         private static readonly int s_Free = Animator.StringToHash("Free");
@@ -69,7 +70,8 @@ namespace Dypsloom.DypThePenguin.Scripts.Game
             if (m_BrokenChainCount == 0) {
 
                 if (GameManager.Instance.EnemyKillCount == 0) {
-                    m_DialogText.text = "Os pinguins brincalhões me acorrentaram aqui. Por favor, vença-os e me liberte das correntes.";
+                    m_DialogText.text = "Foi você que recebeu a mensagem do meu amigo?... Estou preso, viajante… Eu juro que não errei de propósito aquelas perguntas! Eu só tive uma noite de sono ruim… Você consegue responder as dúvidas da vila? Acho que é a única forma de libertar-me dessas correntes!";
+                    //m_DialogText.text = "Os pinguins brincalhões me acorrentaram aqui. Por favor, vença-os e me liberte das correntes.";
                     return;
                 } 
             
@@ -98,10 +100,12 @@ namespace Dypsloom.DypThePenguin.Scripts.Game
             }
         
             if (m_BrokenChainCount == 2) {
-                m_DialogText.text = "Estou Livre! Obrigado! \n\n\n";
+                m_DialogText.text = "Muito obrigado, viajante de outras terras! Você foi incrível! Respondeu aquelas perguntas dificílimas que não consegui entender e salvou-me! Prometo que eu vou estudar mais nas próximas vezes… \r\n \n\n\n";
+                //m_DialogText.text = "Estou Livre! Obrigado! \n\n\n";
                 AudioSource audio = this.GetComponent<AudioSource>();
                 audio.PlayOneShot(audioEnd);
-                fimJogo.SetActive(true);
+                fimJogoMensagem.SetActive(true);
+                //fimJogo.SetActive(true);
                 return;
             }
         
